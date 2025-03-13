@@ -1,0 +1,22 @@
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__
+db.sqlite3
+
+# Virtualenv
+venv/
+*.egg-info/
+
+# MySQL
+*.sql
+
+# Archivos de configuración del IDE (ej. VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Archivos del sistema operativo (macOS, Windows)
+.DS_Store
+Thumbs.db

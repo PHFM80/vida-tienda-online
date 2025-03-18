@@ -1,0 +1,49 @@
+{% load static %}
+
+<section class="featured">
+    <!-- Fila 1: Título -->
+    <div class="featured-header">
+        <h2>Productos Destacados</h2>
+    </div>
+
+    <!-- Fila 2: Carrusel de productos -->
+    <div class="featured-carousel">
+        <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/carrusel-productos-index/empanadas-crudas.webp' %}" class="d-block w-100" alt="Producto 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/carrusel-productos-index/empanadas.webp' %}" class="d-block w-100" alt="Producto 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/carrusel-productos-index/frutos-secos.webp' %}" class="d-block w-100" alt="Producto 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/carrusel-productos-index/hamburguesa.webp' %}" class="d-block w-100" alt="Producto ">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/carrusel-productos-index/pascualina.webp' %}" class="d-block w-100" alt="Producto 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/carrusel-productos-index/seitan.webp' %}" class="d-block w-100" alt="Producto 6">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Fila 3: Llamado a la acción -->
+    <div class="featured-cta">
+        <p>Descubre nuestra selección de productos premium.</p>
+        <a href="{% url 'productos' %}" class="btn-ver-mas">Ver Tienda</a>
+    </div>
+
+</section>

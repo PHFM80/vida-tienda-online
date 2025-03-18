@@ -1,0 +1,27 @@
+main {
+    flex: 1;  /* Ocupa el espacio restante */
+    padding: 5px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Asegura que las filas se apilen */
+}
+
+
+.fila-contenido {
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    height: auto;
+}
+
+/* Columnas laterales */
+.columna-izquierda, .columna-derecha {
+    width: 10%;
+    padding: 20px;
+}
+
+/* Columna central */
+.columna-central {
+    width:80%;
+    padding: 20px;
+}

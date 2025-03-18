@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Vida Tienda Online{% endblock %}</title>
+    
+    <!-- CSS Global -->
+     <!-- Bootstrap CSS (Asegúrate de incluirlo en <head>) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/base/body.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base/footer.css' %}">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- Fila Superior -->
+        <div class="header-top">
+        </div>
+    
+        <!-- Fila Central con 2 Columnas -->
+        <div class="header-middle">
+            <div class="column-left">
+                <p>Logo </p>
+            </div>
+            <div class="column-right">
+                {% block header_lista %}
+                <!-- Espacio para lista de accesos -->
+                {% endblock %}
+            </div>
+            
+        </div>
+    
+        <!-- Fila Inferior -->
+        <div class="header-bottom">
+        </div>
+        
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- Primera fila: Carrusel (Solo en algunas vistas) -->
+        {% block carrusel %}
+        {% endblock %}
+
+        <!-- Segunda fila: Contenido con 3 columnas -->
+        <section class="fila-contenido">
+            <div class="columna-izquierda">
+                {% block columna_izquierda %}
+                {% endblock %}
+            </div>
+        
+            <div class="columna-central">
+                {% block content %}
+                {% endblock %}
+            </div>
+        
+            <div class="columna-derecha">
+                {% block columna_derecha %}
+                {% endblock %}
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div><p>2025 Vida Tienda Online - Todos los derechos reservados</p></div>
+        <div><p>Desarrollado por D&T by Pablo Flores</p></div>
+    </footer>
+
+    <!-- JS Global -->
+    <!-- Bootstrap JS (Asegúrate de incluirlo antes de cerrar </body>) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+.carousel-item img {
+    max-height: 600px; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Mantiene la proporción sin deformar */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+.carousel-caption h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.carousel-caption p {
+    font-size: 16px;
+    color: white;
+}
+
+#carouselExampleFade1 {
+    margin-bottom: 40px; /* Ajusta el valor según la separación que desees */
+}
+
+@media (min-width: 768px) {
+    #carouselExampleFade1 {
+        margin-bottom: 15px;
+    }
+}

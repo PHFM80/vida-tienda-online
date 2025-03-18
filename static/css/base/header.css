@@ -1,0 +1,46 @@
+
+header {
+    position: fixed;  /* Se mantiene fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;  /* Ocupa toda la parte superior */
+    height: 12vh;  /* Mantiene su altura */
+    background: linear-gradient(to bottom, white, #72c6c8); /* Degradado */
+    z-index: 1000;  /* Se mantiene por encima del resto del contenido */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Pequeña sombra para destacar */
+}
+
+/* Para que el contenido no quede oculto debajo del header */
+body {
+    padding-top: 20vh;  /* Desplaza el contenido hacia abajo */
+}
+
+
+/* Fila superior: degradado de blanco a celeste agua */
+.header-top {
+    height: 20%; /* 20% del header */
+    background: linear-gradient(to bottom, white, #72c6c8);
+}
+
+/* Fila central con color sólido */
+.header-middle {
+    height: 60%; /* 60% del header */
+    background-color: #72c6c8; /* Celeste agua */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Fila inferior: degradado de celeste agua a blanco */
+.header-bottom {
+    height: 20%; /* 20% del header */
+    background: linear-gradient(to top, white, #72c6c8);
+}
+
+/* Columnas dentro del header-middle */
+.column-left, .column-right {
+    flex: 1;
+}

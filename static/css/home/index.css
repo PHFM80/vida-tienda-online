@@ -1,0 +1,43 @@
+
+
+.columna-izquierda, .columna-derecha {
+    width: 10%; /* Ancho fijo para las columnas laterales */
+    background-size: auto; /* Asegura que la imagen no cambie de tamaño */
+    background-repeat: repeat; /* Repite la imagen */
+    background-position: center; /* Centra la imagen */
+    background-image: url("/static/images/lateral.webp"); /* Ruta de la imagen */
+    height: 100%; /* Asegura que las columnas se estiren según el contenido central */
+}
+
+
+
+/* Estilos generales para la sección */
+.hero, .nosotros, .featured {
+    width:100%;
+}
+
+.hero {
+    background-color: #e9f7fd; /* Fondo suave para la bienvenida */
+    text-align: center;
+    margin-top: 0px;  /* Elimina cualquier margen superior */
+    padding-top: 0; /* Si tiene relleno, lo eliminamos también */
+}
+
+.nosotros {
+    background-color: #f4f4f4; /* Fondo para la sección de nosotros */
+}
+
+.featured {
+    background-color: #ffffff; /* Fondo blanco para los productos destacados */
+}
+
+.hero h1, .nosotros h2, .featured h2 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.hero p, .nosotros p, .featured p {
+    font-size: 26px;
+    line-height: 1.6;
+}
+

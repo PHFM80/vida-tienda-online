@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Vida Tienda Online{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/home/carrusel-portada.css' %}">
+<link rel="stylesheet" href="{% static 'css/home/seccion-nosotros.css' %}">
+<link rel="stylesheet" href="{% static 'css/home/productos-destacados.css' %}">
+{% endblock %}
+
+
+
+{% block header_lista %}
+    {% include 'lista_secciones.html' %}
+{% endblock %}
+
+
+{% block carrusel %}
+    {% include 'home/carrusel-portada.html' %}
+{% endblock %}
+
+{% block columna_izquierda %}
+<!-- Contenido opcional para la columna izquierda -->
+{% endblock %}
+
+
+{% block content %}
+<!-- Fila 1: Hero (Bienvenida) -->
+    <section class="hero">
+        <h1>Bienvenido a Vida Tienda Online</h1>
+        <p>Encuentra los mejores productos al mejor precio.</p>
+    </section>
+
+<!-- Fila 2: Nosotros -->
+{% include 'home/seccion-nosotros.html' %}
+
+<!-- Fila 3: Productos Destacados -->
+{% include 'home/productos-destacados.html' %}
+
+{% endblock %}
+
+
+{% block columna_derecha %}
+<!-- Contenido opcional para la columna derecha -->
+{% endblock %}
+
+
+

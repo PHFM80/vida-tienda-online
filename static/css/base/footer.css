@@ -1,0 +1,33 @@
+footer {
+    height: 10vh; /* Aproximadamente entre 10% y 15% de la pantalla */
+    background-color: #3a6668; /* Celeste grisáceo */
+    color: white; /* Texto en blanco para contraste */
+
+    flex-direction: column; /* Acomoda los div uno debajo del otro */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    text-align: center;
+    padding: 1px 1px; /* Espaciado mínimo arriba y abajo */
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Hace que la letra resalte más */
+    width: 100%; /* Ocupa el ancho completo */
+    position: fixed; /* Se mantiene fijo */
+    bottom: 0; /* Siempre en la parte inferior */
+}
+
+
+
+/* 🔹 Ajuste del tamaño del texto en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        font-size: 0.9rem; /* Reduce aún más en pantallas muy pequeñas */
+    }
+}
+
+

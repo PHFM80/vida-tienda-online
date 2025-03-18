@@ -1,0 +1,22 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/base/lista_secciones.css' %}">
+
+<nav>
+    <!-- Botón de menú hamburguesa (visible en pantallas pequeñas) -->
+    <button class="menu-toggle">☰</button>
+    
+    <ul>
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="">Nosotros</a></li>
+        <li><a href="{% url 'productos' %}">Productos</a></li>
+        <li><a href="">Iniciar Sesión</a></li>
+    </ul>
+</nav>
+
+<script>
+    // JavaScript para alternar el menú en pantallas pequeñas
+    document.querySelector(".menu-toggle").addEventListener("click", function() {
+        document.querySelector("nav ul").classList.toggle("show");
+    });
+</script>

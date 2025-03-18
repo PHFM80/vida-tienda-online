@@ -1,0 +1,72 @@
+/* Estilos generales del nav */
+nav {
+    background-color: #72c6c8;  /* Color de fondo */
+    padding: 10px 20px;
+}
+
+/* Estilos de la lista en pantallas grandes */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos en fila */
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    font-size: 1.2rem; /* Aumenta el tamaño de la letra */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #5ba5a7;
+    border-radius: 5px;
+}
+
+/* 🔻 Estilos para pantallas pequeñas (menú hamburguesa) */
+.menu-toggle {
+    display: none; /* Oculto en pantallas grandes */
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Ocultar la lista en pantallas pequeñas por defecto */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none; /* Oculta la lista */
+        flex-direction: column;
+        background-color: #72c6c8;
+        position: absolute;
+        top: 60px; /* Se despliega debajo del botón */
+        right: 0;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul.show { /* Clase que se activará con JavaScript */
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 15px;
+        font-size: 1.1rem; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+
+    .menu-toggle {
+        display: block; /* Se muestra el botón de hamburguesa */
+    }
+}
